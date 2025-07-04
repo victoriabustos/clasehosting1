@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnología Educativa en la Educación Superior</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #007acc;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      background: #005f99;
+      padding: 0.5rem 0;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0.5rem 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffdd57;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    section {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    section h2 {
+      margin-bottom: 1rem;
+      color: #007acc;
+    }
+
+    footer {
+      background: #003d66;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tecnología Educativa en la Educación Superior</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#autora">Autora</a></li>
+        <li><a href="#contemporanea">Sociedad Contemporánea</a></li>
+        <li><a href="#informacion">Sociedad de la Información</a></li>
+        <li><a href="#conocimiento">Sociedad del Conocimiento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h2>Inicio</h2>
+      <p>La <strong>tecnología educativa</strong> es el uso estratégico de herramientas tecnológicas para mejorar la enseñanza, el aprendizaje y la evaluación. En la educación superior, potencia la autonomía del estudiante, fomenta la innovación pedagógica y permite el acceso equitativo a contenidos educativos de calidad.</p>
+      <p>Esta área abarca plataformas digitales, entornos virtuales, inteligencia artificial, recursos multimedia y más, todo con el fin de facilitar el aprendizaje significativo.</p>
+    </section>
+
+    <section id="autora">
+      <h2>Autora</h2>
+      <p><strong>VICTORIA KATHERINE BUSTOS ELIZALDE</strong> es estudiante de la Universidad Técnica de Machala (UTMACH). Se caracteriza por su compromiso con el avance tecnológico en los procesos educativos. Cree firmemente en el poder de las herramientas digitales para mejorar la calidad y accesibilidad del aprendizaje.</p>
+    </section>
+
+    <section id="contemporanea">
+      <h2>Sociedad Contemporánea</h2>
+      <p>La sociedad contemporánea se caracteriza por su dinamismo, globalización, digitalización y cambios culturales acelerados. Estos factores influyen directamente en la forma en que aprendemos, enseñamos y nos relacionamos con el conocimiento. La educación superior debe adaptarse constantemente a estos cambios para seguir siendo relevante.</p>
+    </section>
+
+    <section id="informacion">
+      <h2>Sociedad de la Información</h2>
+      <p>En la sociedad de la información, los datos y contenidos digitales son el eje central. El acceso, distribución y manejo de la información se vuelve esencial para el desarrollo social, económico y educativo. Las tecnologías de la información permiten una comunicación más eficiente y el aprendizaje sin fronteras.</p>
+    </section>
+
+    <section id="conocimiento">
+      <h2>Sociedad del Conocimiento</h2>
+      <p>La sociedad del conocimiento va más allá del acceso a la información: promueve el pensamiento crítico, la creatividad y la capacidad de aplicar conocimientos en la resolución de problemas reales. En este contexto, la educación superior tiene la misión de formar ciudadanos capaces de innovar y contribuir activamente al desarrollo global.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p id="datetime">📅 Cargando fecha y hora...</p>
+  </footer>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      const options = {
+        weekday: 'long', year: 'numeric',
+        month: 'long', day: 'numeric',
+        hour: '2-digit', minute: '2-digit', second: '2-digit'
+      };
+      const dateTimeString = now.toLocaleDateString('es-ES', options);
+      document.getElementById("datetime").textContent = `📅 ${dateTimeString}`;
+    }
+
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+  </script>
+</body>
+</html>
